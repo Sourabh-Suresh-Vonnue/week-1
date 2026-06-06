@@ -1,0 +1,23 @@
+Lighthouse:
+Performance - 100
+Accessibility - 96
+Best Pratices - 96
+SEO - 91
+
+Document does not have main landmark.
+Displays images with incorrect aspect ratio
+Document does not have meta decription
+
+
+added <main></main> for mian landmark
+changed image aspect ratio by adjusting width and height
+added meta decription
+
+after update:
+Performance - 100
+Accessibility - 100
+Best Pratices - 100
+SEO - 100
+
+
+axe DevTools: NO issues

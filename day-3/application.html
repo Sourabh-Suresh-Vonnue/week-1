@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D3-T5: Application</title>
+  </head>
+  <body>
+    <main>
+      <h1>Application</h1>
+      <form>
+        <ol>
+          <li>Personal Information</li>
+          <li>Work Experience</li>
+          <li>Documents</li>
+        </ol>
+        <fieldset aria-current="step">
+          <legend>Step 1: Personal Information</legend>
+          <label for="name">Name *: </label>
+          <input type="text" name="name" id="name" required /> <br /><br />
+          <label for="email">Email *: </label>
+          <input type="email" name="email" id="email" required /> <br /><br />
+          <label for="phno">Phone : </label>
+          <input type="tel" name="phno" id="phno" /> <br /><br />
+          <label for="linkedin">LinkedIn URL *: </label>
+          <input type="url" name="linkedin" id="linkedin" required /> <br /><br />
+        </fieldset>
+        <fieldset>
+          <legend>Step 2: Work Experience</legend>
+          <label for="current-role">Current Role: </label>
+          <input type="text" name="current-role" id="current-role" /> <br /><br />
+          <label for="current-company">Current Company: </label>
+          <input type="text" name="current-company" id="current-company" /> <br /><br />
+          <label for="experience">Years of Experience: </label>
+          <input type="number" name="experience" id="experience" min="0" /> <br /><br />
+          <label for="achievements">Achievements: </label>
+          <textarea
+            name="achievements"
+            id="achievements"
+            aria-describedby="achievements-desc"
+          ></textarea>
+          <p id="achievements-desc">Max 500 characters</p>
+        </fieldset>
+        <fieldset>
+          <legend>Step 3: Documents</legend>
+          <label for="cv">Upload CV *: </label>
+          <input type="file" name="cv" id="cv" accept=".pdf, .docx" required /> <br /><br />
+          <label for="cover-letter">Cover Letter: </label>
+          <input type="file" name="cover-letter" id="cover-letter" /> <br /><br />
+          <label for="portfolio">Portfolio URL: </label>
+          <input type="url" name="portfolio" id="portfolio" /> <br /><br />
+        </fieldset>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>

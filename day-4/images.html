@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D4T5 - Responsive Images</title>
+  </head>
+  <body>
+    <main>
+      <img
+        src="https://picsum.photos/seed/1/800/400"
+        alt="a random image"
+        srcset="
+          https://picsum.photos/seed/1/400/200   400w,
+          https://picsum.photos/seed/1/800/400   800w,
+          https://picsum.photos/seed/1/1200/600 1200w
+        "
+        sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        loading="eager"
+      />
+      <img
+        src="https://picsum.photos/seed/2/800/400"
+        alt="a random image"
+        srcset="
+          https://picsum.photos/seed/2/400/200   400w,
+          https://picsum.photos/seed/2/800/400   800w,
+          https://picsum.photos/seed/2/1200/600 1200w
+        "
+        sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+      />
+      <img
+        src="https://picsum.photos/seed/3/800/400"
+        alt="a random image"
+        srcset="
+          https://picsum.photos/seed/3/400/200   400w,
+          https://picsum.photos/seed/3/800/400   800w,
+          https://picsum.photos/seed/3/1200/600 1200w
+        "
+        sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+      />
+      <img
+        src="https://picsum.photos/seed/4/800/400"
+        alt="a random image"
+        srcset="
+          https://picsum.photos/seed/4/400/200   400w,
+          https://picsum.photos/seed/4/800/400   800w,
+          https://picsum.photos/seed/4/1200/600 1200w
+        "
+        sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        loading="lazy"
+      />
+      <img
+        src="https://picsum.photos/seed/5/800/400"
+        alt="a random image"
+        srcset="
+          https://picsum.photos/seed/5/400/200   400w,
+          https://picsum.photos/seed/5/800/400   800w,
+          https://picsum.photos/seed/5/1200/600 1200w
+        "
+        sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        loading="lazy"
+      />
+      <img
+        src="https://picsum.photos/seed/6/800/400"
+        alt="a random image"
+        srcset="
+          https://picsum.photos/seed/6/400/200   400w,
+          https://picsum.photos/seed/6/800/400   800w,
+          https://picsum.photos/seed/6/1200/600 1200w
+        "
+        sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        loading="lazy"
+      />
+      <img
+        src="https://picsum.photos/seed/7/800/400"
+        alt="a random image"
+        srcset="
+          https://picsum.photos/seed/7/400/200   400w,
+          https://picsum.photos/seed/7/800/400   800w,
+          https://picsum.photos/seed/7/1200/600 1200w
+        "
+        sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        loading="lazy"
+      />
+      <img
+        src="https://picsum.photos/seed/8/800/400"
+        alt="a random image"
+        srcset="
+          https://picsum.photos/seed/8/400/200   400w,
+          https://picsum.photos/seed/8/800/400   800w,
+          https://picsum.photos/seed/8/1200/600 1200w
+        "
+        sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        loading="lazy"
+      />
+
+      <picture>
+        <source media="(width > 800px)" srcset="https://picsum.photos/seed/9/800/400" />
+        <source media="(width < 800px)" srcset="./assets/croped-image1.jpg" />
+        <img src="https://picsum.photos/seed/9/800/400" alt="a random image" />
+      </picture>
+      <picture>
+        <source media="(width > 800px)" srcset="https://picsum.photos/seed/10/800/400" />
+        <source media="(width < 800px)" srcset="./assets/croped-image2.jpg" />
+        <img src="https://picsum.photos/seed/9/800/400" alt="a random image" />
+      </picture>
+    </main>
+  </body>
+</html>

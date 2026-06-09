@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task3 - ARIA</title>
+  </head>
+  <body>
+    <a href="#main-content" style="position: absolute; left: -9999px;">Skip to main content</a>
+    <div role="search">
+      <label for="search">Search</label>
+      <input type="search" name="search" id="search" />
+    </div>
+    <br />
+    <button aria-expanded="false" aria-controls="menu-id">&#9776;</button>
+    <nav id="menu-id">
+      <a href="">link1</a>
+      <a href="">link2</a>
+      <a href="">link3</a>
+    </nav>
+    <br />
+    <main id="main-content">
+      <h1>ARIA Demo</h1>
+      <p>main content</p>
+    </main>
+    <br />
+    <div role="alert" aria-live="polite">
+      <p>Notification</p>
+      <button aria-label="Close menu">X</button>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi autem
+        enim error laborum, voluptas optio quidem necessitatibus minima libero
+        asperiores itaque excepturi! Distinctio, officiis magnam aperiam
+        temporibus ducimus corporis quas.
+      </p>
+    </div>
+    <br />
+    <form>
+      <label for="name">Name: </label>
+      <input
+        aria-required="true"
+        aria-describedby="name-desc"
+        type="text"
+        id="name"
+        name="name"
+      />
+      <p id="name-desc">Enter full name.</p>
+      <label for="password">Password: </label>
+      <input
+        aria-required="true"
+        aria-describedby="password-desc"
+        type="password"
+        id="password"
+        name="password"
+      />
+      <p id="password-desc">
+        Password must contain character, digits and special characters. It
+        should be minimum length of 8 characters.
+      </p>
+      <label for="dob">DOB: </label>
+      <input
+        aria-required="true"
+        aria-describedby="dob-desc"
+        type="date"
+        id="dob"
+        name="dob"
+      />
+      <p id="dob-desc">
+        Select Date Of Birth from the provided calendar. Format mm/dd/yyyy
+      </p>
+    </form>
+  </body>
+</html>

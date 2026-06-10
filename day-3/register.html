@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D3T2 - Register</title>
+  </head>
+  <body>
+    <main>
+      <h1>Register</h1>
+      <form>
+        <fieldset>
+          <legend>Personal Details</legend>
+          <label for="name">Name *: </label>
+          <input type="text" id="name" name="name" required /> <br /><br />
+          <label for="email">Email *: </label>
+          <input type="email" id="email" name="email" required /> <br /><br />
+          <label for="phone">Phone: </label>
+          <input type="tel" id="phone" name="phone" /> <br /><br />
+          <label for="age">Age: </label>
+          <input type="number" name="age" id="age" min="1" /> <br /><br />
+          <label for="dob">Date Of Birth *: </label>
+          <input type="date" name="dob" id="dob" required />
+        </fieldset>
+        <fieldset>
+          <legend>Account</legend>
+          <label for="username">User Name *: </label>
+          <input type="text" id="username" name="username" pattern="[A-Za-z0-9_]{3,20}" required />
+          <br /><br />
+          <label for="password">Password *: </label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            minlength="8"
+            maxlength="20"
+          />
+          <br /><br />
+          <label for="confirm-password">Confirm Password *: </label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            required
+            minlength="8"
+            maxlength="20"
+          />
+        </fieldset>
+        <fieldset>
+          <legend>Preferences</legend>
+          <label>Notification: </label>
+          <input type="radio" name="notification" id="notification-yes" value="yes" />
+          <label for="notification-yes">yes</label>
+          <input type="radio" name="notification" id="notification-no" value="no" />
+          <label for="notification-no">no</label> <br /><br />
+          <label for="profile-color">Profile Color</label>
+          <input type="color" name="profile-color" id="profile-color" />
+        </fieldset>
+        <fieldset>
+          <legend>Job</legend>
+          <label for="resume">Upload Resume: </label>
+          <input type="file" name="resume" id="resume" /> <br /><br />
+          <label for="skill-level">Skill Level: </label>
+          <input type="range" name="skill-level" id="skill-level" min="1" max="10" />
+          <br /><br />
+          <label for="passout">Passout Month and Year: </label>
+          <input type="month" name="passout" id="passout" /> <br /><br />
+          <label for="linkedin">LinkedIn URL: </label>
+          <input type="url" name="linkedin" id="linkedin" /> <br /><br />
+          <label>Have you done any intership: </label>
+          <input type="checkbox" name="intership" id="intership" />
+          <label for="intership">Yes</label> <br /><br />
+          <label for="role">Role you are interested in:</label>
+          <input type="text" list="roles" id="role" />
+          <datalist id="roles">
+            <option value="Software Developer">Software Developer</option>
+            <option value="Software Engineer">Software Engineer</option>
+            <option value="Software Tester">Software Tester</option>
+            <option value="Software Architect">Software Architect</option>
+            <option value="DevOps Engineer">DevOps Engineer</option>
+            <option value="ML Engineer">ML Engineer</option>
+            <option value="Researcher">Researcher</option>
+            <option value="Data Analysist">Data Analysist</option>
+          </datalist>
+          <br /><br />
+          <label for="slot">Interview date and time slot *: </label>
+          <input type="datetime-local" name="slot" id="slot" required /> <br /><br />
+          <label for="slot-2">Second time slot preference: </label>
+          <input type="time" id="slot-2" name="slot-2" /> <br /><br />
+          <label for="join-week">Preferenced week of joining: </label>
+          <input type="week" name="join-week" id="join-week" /> <br /><br />
+        </fieldset>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>

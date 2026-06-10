@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D3T4 - Checkout</title>
+  </head>
+  <body>
+    <main>
+      <h1>Checkout</h1>
+      <form>
+        <legend>Fields marked * are required</legend>
+        <fieldset>
+          <legend>Delivery Address</legend>
+          <label for="name">Full Name *: </label>
+          <input type="text" name="name" id="name" required /> <br /><br />
+          <label for="addr1">Address Line 1 *: </label>
+          <input type="text" name="addr1" id="addr1" required /> <br /><br />
+          <label for="addr2">Address 2: </label>
+          <input type="text" name="addr2" id="addr2" /> <br /><br />
+          <label for="city">City *: </label>
+          <input type="text" name="city" id="city" required /> <br /><br />
+          <label for="postcode">PostCode *: </label>
+          <input type="text" name="postcode" id="postcode" required /> <br /><br />
+          <label for="country">Country *: </label>
+          <select id="country" name="country" required>
+            <option value="">Select an Option</option>
+            <option value="Argentine">Argentine</option>
+            <option value="Australia">Australia</option>
+            <option value="Brazil">Brazil</option>
+            <option value="Canada">Canada</option>
+            <option value="China">China</option>
+            <option value="European Union">European Union</option>
+            <option value="France">France</option>
+            <option value="Germany">Germany</option>
+            <option value="India">India</option>
+            <option value="Indonesia">Indonesia</option>
+            <option value="Italy">Italy</option>
+            <option value="Japan">Japan</option>
+            <option value="Mexico">Mexico</option>
+            <option value="Russia">Russia</option>
+            <option value="Saudi Arabia">Saudi Arabia</option>
+            <option value="South Africa">South Africa</option>
+            <option value="South Korea">South Korea</option>
+            <option value="Spain">Spain</option>
+            <option value="Turkey">Turkey</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="United States">United States</option>
+          </select>
+          <br /><br />
+        </fieldset>
+        <fieldset>
+          <legend>Payment Details</legend>
+          <label for="card-no">Card Number *: </label>
+          <input type="number" name="card-no" id="card-no" maxlength="16" required /> <br /><br />
+          <label for="expiry">Expiry month and year *: </label>
+          <input type="month" name="expiry" id="expiry" required /> <br /><br />
+          <label for="cvv">CVV *: </label>
+          <input
+            type="password"
+            name="cvv"
+            id="cvv"
+            maxlength="4"
+            required
+            aria-describedby="cvv-desc"
+          />
+          <p id="cvv-desc">3 or 4 digits on the back of your card</p>
+        </fieldset>
+        <fieldset>
+          <legend>Order Notes</legend>
+          <label for="order-notes">Order Notes (Optional): </label>
+          <textarea name="order-notes" id="order-notes" maxlength="500"></textarea> <br /><br />
+        </fieldset>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>

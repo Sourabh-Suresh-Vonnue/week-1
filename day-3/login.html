@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D3T1 - Login</title>
+  </head>
+  <body>
+    <main>
+      <h1>Login</h1>
+      <form>
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" autocomplete="email" style="font-size: 18px" />
+        <br />
+        <label for="password">Password: </label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          autocomplete="current-password"
+          aria-describedby="pass-desc"
+          minlength="8"
+          style="font-size: 18px"
+        />
+        <button type="button" aria-pressed="false">show/hide</button>
+        <p id="pass-desc">Must be at least 8 characters</p>
+        <input
+          type="checkbox"
+          name="remember-me"
+          id="remember-me"
+          style="width: 20px; height: 20px"
+        />
+        <label for="remember-me">Remember Me</label> <br />
+        <button type="submit" style="font-size: 15px">Login</button>
+      </form>
+    </main>
+  </body>
+</html>
